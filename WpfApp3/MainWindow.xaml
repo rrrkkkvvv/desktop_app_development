@@ -18,9 +18,12 @@
             <RowDefinition Height="20*"/>
         </Grid.RowDefinitions>
         <Label Grid.Row="0" Grid.Column="0" Content="Login" HorizontalAlignment="Center" VerticalAlignment="Center" Height="53" Width="82" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Segoe UI Black"/>
-        <TextBox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="174" Height="42"/>
+        <TextBox Name="LoginInput" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Center"  Width="174" Height="42"/>
+        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Text,ElementName=LoginInput}"/>
         <Button Grid.Row="2" Grid.Column="2" Content="LOGIN" HorizontalAlignment="Center" VerticalAlignment="Center" Height="45" Width="101" FontFamily="Bahnschrift SemiBold"/>
-        <TextBox Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="174" Height="42"/>
+        <TextBox Name="PasswordInput" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="174" Height="42"/>
         <Label Content="Password" HorizontalAlignment="Center" VerticalAlignment="Top" Height="53" Width="82" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0,47,0,0" Grid.Row="1" FontFamily="Segoe UI Black"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Text, ElementName=PasswordInput}"/>
+
     </Grid>
 </Window>
